@@ -1,5 +1,11 @@
+import encuesta from "./Components/encuesta";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <encuesta />
+    </div>
+  );
 };
 
 export default App;
