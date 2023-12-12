@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import AuthContext from "./authcontext";
+
 const encuesta = () => {
+  let { setStep } = useContext(AuthContext);
+
   return (
     <main>
       <h1>Encuesta de satisfacción</h1>
@@ -157,6 +162,7 @@ const encuesta = () => {
               <label htmlFor="larga">Demasiada larga</label>
             </table>
           </fieldset>
+          <button>Enviar</button>
         </form>
       </div>
     </main>

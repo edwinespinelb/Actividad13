@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import AuthContext from "./authcontext";
+
 const Ingreso = () => {
+  let { setStep } = useContext(AuthContext);
+
   return (
     <main>
       <h1>INGRESO</h1>
@@ -6,7 +11,14 @@ const Ingreso = () => {
         <form autoComplete="off">
           <fieldset>
             <label htmlFor="i">email</label>
-            <input type="email" name="i" id="i" placeholder="email" />
+            <input
+              type="email"
+              name="i"
+              id="i"
+              placeholder="email"
+              required
+              autoFocus
+            />
             <p>debe digitar un email valido</p>
           </fieldset>
           <fieldset>
@@ -16,10 +28,11 @@ const Ingreso = () => {
               name="password"
               id="password"
               placeholder="password"
+              required
             />
             <p>debe digitar una contraseña valida</p>
           </fieldset>
-          <button>Ingresar</button>
+          <button onClick={() => setStep("Encuesta")}>Ingresar</button>
         </form>
       </div>
     </main>

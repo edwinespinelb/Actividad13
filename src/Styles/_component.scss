@@ -66,12 +66,12 @@
       }
     }
     button {
-      border-radius: 150px;
+      border-radius: 70px;
       padding: 8px;
       font-family: v.$font-family;
       font-weight: 800;
       font-size: 15px;
-      background-color: #1e7558;
+      background-color: v.$color-button;
       box-shadow: v.$shadow;
       border: solid 1px;
       text-transform: uppercase;
@@ -79,5 +79,26 @@
       margin-top: 15px;
       cursor: pointer;
     }
+  }
+}
+.terminar {
+  background-color: v.$bg-terminar;
+  align-self: auto;
+
+  font-family: v.$font-family;
+  text-align: center;
+  button {
+    border-radius: 70px;
+    padding: 8px;
+    font-family: v.$font-family;
+    font-weight: 800;
+    font-size: 15px;
+    background-color: v.$color-button;
+    box-shadow: v.$shadow;
+    border: solid 1px;
+    text-transform: uppercase;
+    justify-self: center;
+    margin-top: 15px;
+    cursor: pointer;
   }
 }
