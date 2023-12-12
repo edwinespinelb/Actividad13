@@ -4,7 +4,7 @@ import Encuesta from "./Components/encuesta";
 import Ingreso from "./Components/Ingreso";
 
 const App = () => {
-  const [step, setStep] = useState("Ingreso");
+  const [step, setStep] = useState("Encuesta");
   return (
     <div className="container">
       {step === "Encuesta" && <Encuesta />}

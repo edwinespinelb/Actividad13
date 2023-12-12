@@ -1,8 +1,8 @@
 const Ingreso = () => {
   return (
     <main>
-      <h1>Ingreso</h1>
-      <div>
+      <h1>INGRESO</h1>
+      <div className="card">
         <form autoComplete="off">
           <fieldset>
             <label htmlFor="i">email</label>
