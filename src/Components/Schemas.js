@@ -1,22 +1,21 @@
 import * as Yup from "yup";
 
 export const Schema = Yup.object().shape({
-  fullName: Yup.string().required("Full name is required"),
   email: Yup.string()
-    .email("Enter a valid email")
-    .required("Email is required"),
+    .email("Ingrese un correo valido")
+    .required("Email requerido"),
   password: Yup.string()
-    .min(8, "Password must be at least 8 characters")
+    .min(8, "Ingrese password correcto")
     .matches(
       /(?=.*[\W])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/,
-      "Password must have lower, upper, nums, symbols"
+      "El password debe contener los caracteres correctos"
     )
-    .required("Password is required"),
-  confirm: Yup.string()
-    .oneOf([Yup.ref("password"), null], "Passwords must match")
-    .required("Confirmation is required"),
-  framework: Yup.string()
-    .oneOf(["react", "vue", "angular"], "Must select a framework")
-    .required("Framework is required"),
-  terms: Yup.bool().oneOf([true], "You must accept the terms"),
+    .required("Password requerido"),
+  // confirm: Yup.string()
+  //   .oneOf([Yup.ref("password"), null], "Passwords must match")
+  //   .required("Confirmation is required"),
+  // framework: Yup.string()
+  //   .oneOf(["react", "vue", "angular"], "Must select a framework")
+  //   .required("Framework is required"),
+  // terms: Yup.bool().oneOf([true], "You must accept the terms"),
 });

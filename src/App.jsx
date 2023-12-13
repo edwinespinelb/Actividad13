@@ -6,7 +6,7 @@ import Ingreso from "./Components/Ingreso";
 import Felicitaciones from "./Components/felicitaciones";
 
 const App = () => {
-  const [step, setStep] = useState("Felicitaciones");
+  const [step, setStep] = useState("Ingreso");
   return (
     <AuthContext.Provider value={{ step, setStep }}>
       <div className="container">

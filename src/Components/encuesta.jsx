@@ -162,7 +162,7 @@ const encuesta = () => {
               <label htmlFor="larga">Demasiada larga</label>
             </table>
           </fieldset>
-          <button>Enviar</button>
+          <button onClick={() => setStep("Felicitaciones")}>Enviar</button>
         </form>
       </div>
     </main>

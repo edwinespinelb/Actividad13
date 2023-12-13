@@ -2,7 +2,7 @@
 
 .container {
   width: 100vw;
-  height: 200vh;
+  height: min-content;
   padding: 30px;
   background-image: v.$bg-container;
   main {
@@ -10,6 +10,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 50%;
+    min-width: 450px;
     max-width: 400%;
     margin: 0px auto;
     box-shadow: v.$shadow;
@@ -31,6 +32,7 @@
 
     form {
       display: grid;
+
       fieldset {
         border: none;
         display: flex;
@@ -79,14 +81,26 @@
       margin-top: 15px;
       cursor: pointer;
     }
+    span {
+      font-family: v.$font-family;
+      padding: 0.5px;
+      color: red;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .enlace {
+      font-family: v.$font-family;
+      padding: 10px;
+      text-align: center;
+    }
   }
 }
 .terminar {
-  background-color: v.$bg-terminar;
   align-self: auto;
-
   font-family: v.$font-family;
   text-align: center;
+
   button {
     border-radius: 70px;
     padding: 8px;
